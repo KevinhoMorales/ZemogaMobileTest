@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		2A7AC4232868A5FC00271F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4222868A5FC00271F19 /* AppDelegate.swift */; };
-		2A7AC4252868A5FC00271F19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4242868A5FC00271F19 /* SceneDelegate.swift */; };
-		2A7AC4272868A5FC00271F19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4262868A5FC00271F19 /* ViewController.swift */; };
-		2A7AC42A2868A5FC00271F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC4282868A5FC00271F19 /* Main.storyboard */; };
 		2A7AC42C2868A60000271F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC42B2868A60000271F19 /* Assets.xcassets */; };
 		2A7AC42F2868A60000271F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC42D2868A60000271F19 /* LaunchScreen.storyboard */; };
+		2A7AC4382868BF8300271F19 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4372868BF8300271F19 /* MainCoordinator.swift */; };
+		2A7AC43F2868BFD500271F19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC43D2868BFD500271F19 /* HomeViewController.swift */; };
+		2A7AC4402868BFD500271F19 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC43E2868BFD500271F19 /* HomeViewController.xib */; };
+		2A7AC4422868BFE000271F19 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4412868BFE000271F19 /* HomeViewModel.swift */; };
+		2A7AC4452868C04900271F19 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4442868C04900271F19 /* HomeRouter.swift */; };
+		2A7AC4482868C32800271F19 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4472868C32800271F19 /* NetworkingManager.swift */; };
+		2A7AC44A2868C38800271F19 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4492868C38800271F19 /* Posts.swift */; };
+		2A7AC44D2868CD0E00271F19 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC44C2868CD0E00271F19 /* Loading.swift */; };
+		2A7AC4552868CE9600271F19 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4532868CE9600271F19 /* DetailViewController.swift */; };
+		2A7AC4562868CE9600271F19 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC4542868CE9600271F19 /* DetailViewController.xib */; };
+		2A7AC4592868CEA800271F19 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4582868CEA800271F19 /* DetailViewModel.swift */; };
+		2A7AC45B2868CEC500271F19 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC45A2868CEC500271F19 /* DetailRouter.swift */; };
+		2A7AC45D2868D05800271F19 /* CommentId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC45C2868D05800271F19 /* CommentId.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A7AC41F2868A5FC00271F19 /* ZemogaMobileTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaMobileTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7AC4222868A5FC00271F19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A7AC4242868A5FC00271F19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2A7AC4262868A5FC00271F19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2A7AC4292868A5FC00271F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A7AC42B2868A60000271F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7AC42E2868A60000271F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A7AC4302868A60000271F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7AC4372868BF8300271F19 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2A7AC43D2868BFD500271F19 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A7AC43E2868BFD500271F19 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2A7AC4412868BFE000271F19 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2A7AC4442868C04900271F19 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2A7AC4472868C32800271F19 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		2A7AC4492868C38800271F19 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		2A7AC44C2868CD0E00271F19 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		2A7AC4532868CE9600271F19 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2A7AC4542868CE9600271F19 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		2A7AC4582868CEA800271F19 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		2A7AC45A2868CEC500271F19 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		2A7AC45C2868D05800271F19 /* CommentId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentId.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,129 @@
 		2A7AC4212868A5FC00271F19 /* ZemogaMobileTest */ = {
 			isa = PBXGroup;
 			children = (
+				2A7AC44B2868CCD700271F19 /* Utils */,
+				2A7AC4462868C31C00271F19 /* Networking */,
+				2A7AC4392868BFB300271F19 /* Home */,
+				2A7AC44E2868CE7200271F19 /* Detail */,
+				2A7AC4362868BF7700271F19 /* Coordinator */,
 				2A7AC4222868A5FC00271F19 /* AppDelegate.swift */,
-				2A7AC4242868A5FC00271F19 /* SceneDelegate.swift */,
-				2A7AC4262868A5FC00271F19 /* ViewController.swift */,
-				2A7AC4282868A5FC00271F19 /* Main.storyboard */,
 				2A7AC42B2868A60000271F19 /* Assets.xcassets */,
 				2A7AC42D2868A60000271F19 /* LaunchScreen.storyboard */,
 				2A7AC4302868A60000271F19 /* Info.plist */,
 			);
 			path = ZemogaMobileTest;
+			sourceTree = "<group>";
+		};
+		2A7AC4362868BF7700271F19 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4372868BF8300271F19 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2A7AC4392868BFB300271F19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4432868C03F00271F19 /* Router */,
+				2A7AC43C2868BFC600271F19 /* Model */,
+				2A7AC43B2868BFC300271F19 /* View */,
+				2A7AC43A2868BFBE00271F19 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2A7AC43A2868BFBE00271F19 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4412868BFE000271F19 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A7AC43B2868BFC300271F19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC43D2868BFD500271F19 /* HomeViewController.swift */,
+				2A7AC43E2868BFD500271F19 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7AC43C2868BFC600271F19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4492868C38800271F19 /* Posts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7AC4432868C03F00271F19 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4442868C04900271F19 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2A7AC4462868C31C00271F19 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4472868C32800271F19 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2A7AC44B2868CCD700271F19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC44C2868CD0E00271F19 /* Loading.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2A7AC44E2868CE7200271F19 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4522868CE8900271F19 /* Router */,
+				2A7AC4512868CE8000271F19 /* Model */,
+				2A7AC4502868CE7D00271F19 /* View */,
+				2A7AC44F2868CE7900271F19 /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2A7AC44F2868CE7900271F19 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4582868CEA800271F19 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A7AC4502868CE7D00271F19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4532868CE9600271F19 /* DetailViewController.swift */,
+				2A7AC4542868CE9600271F19 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7AC4512868CE8000271F19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC45C2868D05800271F19 /* CommentId.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7AC4522868CE8900271F19 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC45A2868CEC500271F19 /* DetailRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +261,8 @@
 			files = (
 				2A7AC42F2868A60000271F19 /* LaunchScreen.storyboard in Resources */,
 				2A7AC42C2868A60000271F19 /* Assets.xcassets in Resources */,
-				2A7AC42A2868A5FC00271F19 /* Main.storyboard in Resources */,
+				2A7AC4402868BFD500271F19 /* HomeViewController.xib in Resources */,
+				2A7AC4562868CE9600271F19 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +273,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7AC4272868A5FC00271F19 /* ViewController.swift in Sources */,
+				2A7AC4552868CE9600271F19 /* DetailViewController.swift in Sources */,
+				2A7AC45B2868CEC500271F19 /* DetailRouter.swift in Sources */,
+				2A7AC4382868BF8300271F19 /* MainCoordinator.swift in Sources */,
 				2A7AC4232868A5FC00271F19 /* AppDelegate.swift in Sources */,
-				2A7AC4252868A5FC00271F19 /* SceneDelegate.swift in Sources */,
+				2A7AC4592868CEA800271F19 /* DetailViewModel.swift in Sources */,
+				2A7AC43F2868BFD500271F19 /* HomeViewController.swift in Sources */,
+				2A7AC45D2868D05800271F19 /* CommentId.swift in Sources */,
+				2A7AC44A2868C38800271F19 /* Posts.swift in Sources */,
+				2A7AC4482868C32800271F19 /* NetworkingManager.swift in Sources */,
+				2A7AC4422868BFE000271F19 /* HomeViewModel.swift in Sources */,
+				2A7AC44D2868CD0E00271F19 /* Loading.swift in Sources */,
+				2A7AC4452868C04900271F19 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2A7AC4282868A5FC00271F19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A7AC4292868A5FC00271F19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2A7AC42D2868A60000271F19 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,17 +426,17 @@
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZemogaMobileTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zemoga;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.ZemogaMobileTest;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.zemogamobiletest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,17 +454,17 @@
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZemogaMobileTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zemoga;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.ZemogaMobileTest;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.zemogamobiletest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

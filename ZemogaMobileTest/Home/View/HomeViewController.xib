@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ZemogaMobileTest" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="AKT-kK-AYc" id="WRP-8j-Shw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-kK-AYc">
+                    <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fkQ-HB-DeD"/>
+                        <outlet property="delegate" destination="-1" id="Qxu-f5-oSO"/>
+                    </connections>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Ho-ll-w4s">
+                    <rect key="frame" x="16" y="60" width="382" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5n6-Ik-VRs"/>
+                    </constraints>
+                    <segments>
+                        <segment title="" image="tray.full.fill" catalog="system"/>
+                        <segment title="" image="heart.fill" catalog="system"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8Ho-ll-w4s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="75b-uI-TH3"/>
+                <constraint firstItem="AKT-kK-AYc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Hd-KW-Qm3"/>
+                <constraint firstItem="AKT-kK-AYc" firstAttribute="top" secondItem="8Ho-ll-w4s" secondAttribute="bottom" constant="8" id="AaG-mg-VT1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AKT-kK-AYc" secondAttribute="trailing" id="Akv-CG-abG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Ho-ll-w4s" secondAttribute="trailing" constant="16" id="Hxm-Vo-hsl"/>
+                <constraint firstAttribute="bottom" secondItem="AKT-kK-AYc" secondAttribute="bottom" id="KUB-dw-pqb"/>
+                <constraint firstItem="8Ho-ll-w4s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="eaW-Sl-AIU"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="52.901785714285715"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="tray.full.fill" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
