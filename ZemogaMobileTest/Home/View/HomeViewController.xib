@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-kK-AYc">
-                    <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                    <rect key="frame" x="0.0" y="98" width="414" height="686"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="fkQ-HB-DeD"/>
@@ -29,6 +29,7 @@
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Ho-ll-w4s">
                     <rect key="frame" x="16" y="60" width="382" height="31"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="5n6-Ik-VRs"/>
                     </constraints>
@@ -37,17 +38,33 @@
                         <segment title="" image="heart.fill" catalog="system"/>
                     </segments>
                 </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1p-j7-bvF">
+                    <rect key="frame" x="16" y="792" width="382" height="50"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="xMx-Id-RdC"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Delete All"/>
+                    <connections>
+                        <action selector="deleteTapAction:" destination="-1" eventType="touchUpInside" id="gn8-11-vJa"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="K1p-j7-bvF" secondAttribute="bottom" constant="20" id="1S4-JQ-RsG"/>
                 <constraint firstItem="8Ho-ll-w4s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="75b-uI-TH3"/>
                 <constraint firstItem="AKT-kK-AYc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Hd-KW-Qm3"/>
                 <constraint firstItem="AKT-kK-AYc" firstAttribute="top" secondItem="8Ho-ll-w4s" secondAttribute="bottom" constant="8" id="AaG-mg-VT1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AKT-kK-AYc" secondAttribute="trailing" id="Akv-CG-abG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K1p-j7-bvF" secondAttribute="trailing" constant="16" id="Fug-vk-Xg4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Ho-ll-w4s" secondAttribute="trailing" constant="16" id="Hxm-Vo-hsl"/>
-                <constraint firstAttribute="bottom" secondItem="AKT-kK-AYc" secondAttribute="bottom" id="KUB-dw-pqb"/>
+                <constraint firstItem="K1p-j7-bvF" firstAttribute="top" secondItem="AKT-kK-AYc" secondAttribute="bottom" constant="8" id="VkL-2W-D9q"/>
                 <constraint firstItem="8Ho-ll-w4s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="eaW-Sl-AIU"/>
+                <constraint firstItem="K1p-j7-bvF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hE4-vB-xFJ"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="52.901785714285715"/>
         </view>
@@ -57,6 +74,12 @@
         <image name="tray.full.fill" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

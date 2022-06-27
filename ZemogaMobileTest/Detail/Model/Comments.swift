@@ -1,5 +1,5 @@
 //
-//  CommentId.swift
+//  Comments.swift
 //  ZemogaMobileTest
 //
 //  Created by Kevinho Morales on 26/6/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CommentId: Codable {
+struct Comments: Codable {
     let postId: Int
     let id: Int
     let name: String

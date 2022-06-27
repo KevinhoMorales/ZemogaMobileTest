@@ -18,7 +18,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "POSTS"
-        viewModel.viewDidLoad(tableView: tableView)
+        viewModel.tableView = tableView
+        viewModel.viewDidLoad()
+    }
+    
+    @IBAction func deleteTapAction(_ sender: Any) {
+        viewModel.deleteAll()
     }
     
 }
@@ -28,11 +33,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         viewModel.posts?.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.CELL_ID, for: indexPath) as! HomeTableViewCell
         let post = viewModel.posts?[indexPath.row]
-        cell.textLabel?.text = post?.title
-        cell.detailTextLabel?.text = post?.body
+        cell.setUpCell(post: post!)
         return cell
     }
     

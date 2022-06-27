@@ -11,8 +11,11 @@ import UIKit
 protocol HomeRouter {
     var coordinator: MainCoordinator? {get set}
     var posts: [Posts]? {get set}
-    func viewDidLoad(tableView: UITableView)
+    var tableView: UITableView? {get set}
+    func viewDidLoad()
     func setUpView()
     func getPosts(completion: @escaping ([Posts]) -> ())
     func didSelectedPost(post: Posts)
+    func setUpCell()
+    func deleteAll()
 }

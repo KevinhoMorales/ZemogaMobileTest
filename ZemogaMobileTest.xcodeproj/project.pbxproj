@@ -22,7 +22,11 @@
 		2A7AC4562868CE9600271F19 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC4542868CE9600271F19 /* DetailViewController.xib */; };
 		2A7AC4592868CEA800271F19 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4582868CEA800271F19 /* DetailViewModel.swift */; };
 		2A7AC45B2868CEC500271F19 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC45A2868CEC500271F19 /* DetailRouter.swift */; };
-		2A7AC45D2868D05800271F19 /* CommentId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC45C2868D05800271F19 /* CommentId.swift */; };
+		2A7AC45D2868D05800271F19 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC45C2868D05800271F19 /* Comments.swift */; };
+		2A7AC4612868D6FE00271F19 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC45F2868D6FE00271F19 /* HomeTableViewCell.swift */; };
+		2A7AC4622868D6FE00271F19 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC4602868D6FE00271F19 /* HomeTableViewCell.xib */; };
+		2A7AC4662869D97500271F19 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7AC4642869D97500271F19 /* CommentsTableViewCell.swift */; };
+		2A7AC4672869D97500271F19 /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7AC4652869D97500271F19 /* CommentsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +47,11 @@
 		2A7AC4542868CE9600271F19 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		2A7AC4582868CEA800271F19 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		2A7AC45A2868CEC500271F19 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
-		2A7AC45C2868D05800271F19 /* CommentId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentId.swift; sourceTree = "<group>"; };
+		2A7AC45C2868D05800271F19 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		2A7AC45F2868D6FE00271F19 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		2A7AC4602868D6FE00271F19 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		2A7AC4642869D97500271F19 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		2A7AC4652869D97500271F19 /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 		2A7AC43B2868BFC300271F19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A7AC45E2868D6E800271F19 /* Cell */,
 				2A7AC43D2868BFD500271F19 /* HomeViewController.swift */,
 				2A7AC43E2868BFD500271F19 /* HomeViewController.xib */,
 			);
@@ -179,6 +188,7 @@
 		2A7AC4502868CE7D00271F19 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A7AC4632869D95C00271F19 /* Cell */,
 				2A7AC4532868CE9600271F19 /* DetailViewController.swift */,
 				2A7AC4542868CE9600271F19 /* DetailViewController.xib */,
 			);
@@ -188,7 +198,7 @@
 		2A7AC4512868CE8000271F19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2A7AC45C2868D05800271F19 /* CommentId.swift */,
+				2A7AC45C2868D05800271F19 /* Comments.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +209,24 @@
 				2A7AC45A2868CEC500271F19 /* DetailRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		2A7AC45E2868D6E800271F19 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC45F2868D6FE00271F19 /* HomeTableViewCell.swift */,
+				2A7AC4602868D6FE00271F19 /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2A7AC4632869D95C00271F19 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A7AC4642869D97500271F19 /* CommentsTableViewCell.swift */,
+				2A7AC4652869D97500271F19 /* CommentsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +290,9 @@
 				2A7AC42F2868A60000271F19 /* LaunchScreen.storyboard in Resources */,
 				2A7AC42C2868A60000271F19 /* Assets.xcassets in Resources */,
 				2A7AC4402868BFD500271F19 /* HomeViewController.xib in Resources */,
+				2A7AC4622868D6FE00271F19 /* HomeTableViewCell.xib in Resources */,
 				2A7AC4562868CE9600271F19 /* DetailViewController.xib in Resources */,
+				2A7AC4672869D97500271F19 /* CommentsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,14 +305,16 @@
 			files = (
 				2A7AC4552868CE9600271F19 /* DetailViewController.swift in Sources */,
 				2A7AC45B2868CEC500271F19 /* DetailRouter.swift in Sources */,
+				2A7AC4612868D6FE00271F19 /* HomeTableViewCell.swift in Sources */,
 				2A7AC4382868BF8300271F19 /* MainCoordinator.swift in Sources */,
 				2A7AC4232868A5FC00271F19 /* AppDelegate.swift in Sources */,
 				2A7AC4592868CEA800271F19 /* DetailViewModel.swift in Sources */,
 				2A7AC43F2868BFD500271F19 /* HomeViewController.swift in Sources */,
-				2A7AC45D2868D05800271F19 /* CommentId.swift in Sources */,
+				2A7AC45D2868D05800271F19 /* Comments.swift in Sources */,
 				2A7AC44A2868C38800271F19 /* Posts.swift in Sources */,
 				2A7AC4482868C32800271F19 /* NetworkingManager.swift in Sources */,
 				2A7AC4422868BFE000271F19 /* HomeViewModel.swift in Sources */,
+				2A7AC4662869D97500271F19 /* CommentsTableViewCell.swift in Sources */,
 				2A7AC44D2868CD0E00271F19 /* Loading.swift in Sources */,
 				2A7AC4452868C04900271F19 /* HomeRouter.swift in Sources */,
 			);

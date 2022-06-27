@@ -25,13 +25,13 @@ final class NetworkingManager {
                     do {
                         let decoder = JSONDecoder()
                         let posts = try decoder.decode([Posts].self, from: data)
-                        DispatchQueue.main.async {
-                            Loading.hide()
-                        }
                         print("GET POSTS")
                         completion(posts)
                     } catch (let error) {
                         print("Not parse object -> \(error.localizedDescription)")
+                    }
+                    DispatchQueue.main.async {
+                        Loading.hide()
                     }
                 }
             } else {
@@ -42,9 +42,9 @@ final class NetworkingManager {
         task.resume()
     }
     
-    internal func getCommentId(post: Posts, completion: @escaping (CommentId) -> ()) {
+    internal func getCommentId(post: Posts, completion: @escaping ([Comments]) -> ()) {
         Loading.show()
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/comments/\(post.id)") else { return }
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/comments?postId=\(post.id)") else { return }
         let urlRequest = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             if let data = data,
@@ -54,14 +54,14 @@ final class NetworkingManager {
                 if httpResponse.statusCode == 200 {
                     do {
                         let decoder = JSONDecoder()
-                        let commentId = try decoder.decode(CommentId.self, from: data)
-                        DispatchQueue.main.async {
-                            Loading.hide()
-                        }
+                        let comments = try decoder.decode([Comments].self, from: data)
                         print("GET COMMENT BY ID")
-                        completion(commentId)
+                        completion(comments)
                     } catch (let error) {
                         print("Not parse object -> \(error.localizedDescription)")
+                    }
+                    DispatchQueue.main.async {
+                        Loading.hide()
                     }
                 }
             } else {

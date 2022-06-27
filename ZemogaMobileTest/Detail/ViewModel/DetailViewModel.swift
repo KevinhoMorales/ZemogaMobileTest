@@ -9,15 +9,22 @@ import UIKit
 
 final class DetailViewModel: DetailRouter {
     var coordinator: MainCoordinator?
+    var tableView: UITableView?
         
-    var commentId: CommentId?
+    var comments: [Comments]?
     
     func viewDidLoad(label: UILabel) {
         setUpView()
-        label.text = commentId?.email
+        label.text = comments?.first?.email
     }
     
     func setUpView() {
-        
+        setUpCell()
+    }
+    
+    func setUpCell() {
+        let cell = UINib(nibName: "CommentsTableViewCell", bundle: nil)
+        tableView?.register(cell, forCellReuseIdentifier: CommentsTableViewCell.CELL_ID)
+        tableView?.tableFooterView = UIView()
     }
 }

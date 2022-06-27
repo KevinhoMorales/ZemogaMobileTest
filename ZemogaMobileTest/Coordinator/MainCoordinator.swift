@@ -22,10 +22,10 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(welcomeView, animated: true)
     }
     
-    func detailView(commentId: CommentId) {
+    func detailView(comments: [Comments]) {
         let detailView = DetailViewController(nibName: "DetailViewController", bundle: nil)
         detailView.viewModel.coordinator = self
-        detailView.viewModel.commentId = commentId
+        detailView.viewModel.comments = comments
         navigationController.pushViewController(detailView, animated: true)
     }
 }
