@@ -11,6 +11,7 @@ final class HomeViewModel: HomeRouter {
     var posts: [Posts]?
     var coordinator: MainCoordinator?
     var tableView: UITableView?
+    var viewcontroller: UIViewController?
     
     func viewDidLoad() {
         setUpView()
@@ -25,6 +26,29 @@ final class HomeViewModel: HomeRouter {
     func setUpView() {
         posts = [Posts]()
         setUpCell()
+        setUpBarButtons()
+    }
+    
+    internal func setUpBarButtons() {
+        let profileBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle"), style: .done, target: self, action: #selector(profileAction))
+        let refreshBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.clockwise"), style: .done, target: self, action: #selector(refreshAction))
+        viewcontroller?.navigationItem.leftBarButtonItem  = profileBarButtonItem
+        viewcontroller?.navigationItem.rightBarButtonItem  = refreshBarButtonItem
+    }
+    
+    @objc
+    fileprivate func profileAction() {
+        print("clicked")
+    }
+    
+    @objc
+    fileprivate func refreshAction() {
+        getPosts { [weak self] posts in
+            self?.posts = posts
+            DispatchQueue.main.async {
+                self?.tableView!.reloadData()
+            }
+        }
     }
     
     func getPosts(completion: @escaping ([Posts]) -> ()) {

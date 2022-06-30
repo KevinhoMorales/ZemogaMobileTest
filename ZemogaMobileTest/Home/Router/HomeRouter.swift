@@ -12,6 +12,7 @@ protocol HomeRouter {
     var coordinator: MainCoordinator? {get set}
     var posts: [Posts]? {get set}
     var tableView: UITableView? {get set}
+    var viewcontroller: UIViewController? {get set}
     func viewDidLoad()
     func setUpView()
     func getPosts(completion: @escaping ([Posts]) -> ())

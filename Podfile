@@ -7,4 +7,7 @@ target 'ZemogaMobileTest' do
 
   # Pods for ZemogaMobileTest
 
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+
 end

@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         title = "POSTS"
         viewModel.tableView = tableView
+        viewModel.viewcontroller = self
         viewModel.viewDidLoad()
     }
     
